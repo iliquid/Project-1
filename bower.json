@@ -1,0 +1,29 @@
+{
+  "name": "homework.loc",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Korneev S."
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "normalize-strings": "normalize#~1.0.4",
+    "normalize-css": "normalize.css#~3.0.3",
+    "modernizr": "2.8.3"
+  }
+}

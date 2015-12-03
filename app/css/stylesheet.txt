@@ -1,0 +1,125 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-X {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.-arrow {
+    width: 10px;
+    height: 38px;
+    background-position: -5px -29px;
+}
+
+.-arrow-grey {
+    width: 11px;
+    height: 40px;
+    background-position: -5px -77px;
+}
+
+.-checkbox-bkg {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -127px;
+}
+
+.-checkmark {
+    width: 9px;
+    height: 8px;
+    background-position: -5px -159px;
+}
+
+.-email-auth {
+    width: 23px;
+    height: 17px;
+    background-position: -5px -177px;
+}
+
+.-fb {
+    width: 10px;
+    height: 22px;
+    background-position: -5px -204px;
+}
+
+.-fb-hover {
+    width: 10px;
+    height: 22px;
+    background-position: -5px -236px;
+}
+
+.-github {
+    width: 29px;
+    height: 23px;
+    background-position: -5px -268px;
+}
+
+.-github-hover {
+    width: 29px;
+    height: 23px;
+    background-position: -5px -301px;
+}
+
+.-key-auth {
+    width: 22px;
+    height: 20px;
+    background-position: -5px -334px;
+}
+
+.-mail {
+    width: 17px;
+    height: 13px;
+    background-position: -5px -364px;
+}
+
+.-phone {
+    width: 17px;
+    height: 22px;
+    background-position: -5px -387px;
+}
+
+.-polaroid {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -419px;
+}
+
+.-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -450px;
+}
+
+.-twit {
+    width: 24px;
+    height: 18px;
+    background-position: -5px -480px;
+}
+
+.-twit-hover {
+    width: 24px;
+    height: 18px;
+    background-position: -5px -508px;
+}
+
+.-upload {
+    width: 25px;
+    height: 18px;
+    background-position: -5px -536px;
+}
+
+.-vk {
+    width: 15px;
+    height: 19px;
+    background-position: -5px -564px;
+}
+
+.-vk-hover {
+    width: 15px;
+    height: 19px;
+    background-position: -5px -593px;
+}

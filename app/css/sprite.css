@@ -1,0 +1,107 @@
+.arrow:after {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 38px;
+    background-position: -4px -26px;
+    left:50px;
+}
+.left-icons-mail:before {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 13px;
+    background-position: -4px -341px;
+    top:12px;
+    left:20px;
+}
+
+.left-icons-phone:before {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 22px;
+    background-position: -4px -362px;
+    top:12px;
+    left:20px;
+}
+.left-icons-skype:before {
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    content: "";
+     width: 20px;
+    height: 20px;
+    background-position: -4px -421px;
+    top:12px;
+    left:20px;
+}
+
+/*Social Idle*/
+
+.fb {
+  background-position: -4px -191px;
+  width: 10px;
+  height: 22px;
+}
+.vk {
+  background-position: -4px -527px;
+  width: 15px;
+  height: 19px;
+}
+.git {
+  background-position: -4px -251px;
+  width: 29px;
+  height: 23px;
+}
+.twit {
+  background-position: -4px -449px;
+  width: 24px;
+  height: 18px;
+}
+
+/* Social Hover */
+
+.fb:hover {
+  background-position: -4px -221px;
+  width: 10px;
+  height: 22px;
+}
+.vk:hover {
+  background-position: -4px -554px;
+  width: 15px;
+  height: 19px;
+}
+.git:hover {
+  background-position: -4px -282px;
+  width: 29px;
+  height: 23px;
+}
+.twit:hover {
+  background-position: -4px -475px;
+  width: 24px;
+  height: 18px;
+}
+
+.spritesheet {
+  
+  
+
+}
+.tag {
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position:-7px -630px;
+  width: 9px;
+  height: 18px;
+}
