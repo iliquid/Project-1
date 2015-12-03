@@ -71,21 +71,19 @@
 							<label>Сообщение</label>
 							<textarea class="feedback-message"></textarea>
 								<label class="captcha-label">Введите текст на картинке</label>
-							<div class="captcha">
-								<img src="http://placehold.it/190x80" alt="" class="captcha-pic">
+								<div class="captcha-wrap"></div>
+									<div class="captcha-pic-wrap">
+										<img src="http://placehold.it/190x80" alt="" class="captcha-pic">
+									</div>
+									<div class="captcha-input-wrap">
+										<input class="input-captcha" type="text" placeholder="Введите капчу">
+									</div>
+								</div>
+
+							<div class="feedback-buttons-wrap clearfix">
+								<button class="feedback-button">Отправить</button>
+								<button class="feedback-button reset-button">Сбросить</button>
 							</div>
-							<div class="captcha-input-wrap">
-								<input class="input-captcha" type="text" placeholder="Введите капчу">
-							</div>
-							<ul class="form-buttons">
-								<li class="form-button-item">
-									<input type="button" value="Reset">
-								</li>
-								<li class="form-button-item">
-									<input type="button" value="Reset">
-								</li>
-							</ul>
-		
 							
 						</form>
 					</div>
