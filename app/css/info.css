@@ -84,7 +84,6 @@
 }
 .jobs-list {
 	padding:0;
-	margin-bottom: 30px;
 	list-style: none;
 	width: 100%;
 
@@ -92,15 +91,17 @@
 
 }
 .jobs-list-item {
-	padding: 20px 0;
+	padding-top: 15px;
+	padding-bottom:19px;
 	border-image: url(../img/border.png) 0 0 9 0;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-bottom:4px;
 }
-.jobs-list-item:last-child {
+.jobs-list-item:last-child{
 	border:none;
+	padding-bottom: 1px;
 }
 .jobs-wrap {
 	width:570px;
@@ -117,7 +118,7 @@
 	background: #222;
 }
 .jobs-info, .school, .university, .courses{
-	padding-left: 70px;
+	padding-left: 100px;
 	position: relative;
 }
 
