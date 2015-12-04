@@ -60,20 +60,20 @@
 						<form action="go.php" class="feedback-form">
 							<ul class="feedback-inputs">
 								<li class="input-item">
-									<label>Твое имя</label>
-									<input class="input-name" type="text" placeholder="Ваше имя">
+									<label class="name-label">Ваше имя</label>
+									<input class="input-name input-default" type="text" placeholder="Ваше имя">
 								</li>
-								<li class="input-item">
-									<label>Твое имя</label>
-									<input class="input-name" type="text" placeholder="Ваше имя">
+								<li class="input-item email-item">
+									<label class="email-label">Ваш Email</label>
+									<input class="input-name input-default" type="text" placeholder="Ваше имя">
 								</li>
 							</ul>
-							<label>Сообщение</label>
+							<label class="message-label">Сообщение</label>
 							<textarea class="feedback-message"></textarea>
-								<label class="captcha-label">Введите текст на картинке</label>
+								<label class="captcha-label">Введите код, указанный на картинке</label>
 								<div class="captcha-wrap"></div>
 									<div class="captcha-pic-wrap">
-										<img src="http://placehold.it/190x80" alt="" class="captcha-pic">
+										<img src="img/captcha.png" alt="" class="captcha-pic">
 									</div>
 									<div class="captcha-input-wrap">
 										<input class="input-captcha" type="text" placeholder="Введите капчу">
