@@ -1,8 +1,6 @@
 .feedback-wrap {
 	width: 405px;
 	margin: 30px auto;
-
-	
 }
 .feedback-inputs {
 	width: 100%;
@@ -21,7 +19,6 @@
    content: "";
    display: inline-block;
 }
-
 input {
 	border:1px solid #D6D5D3;
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
@@ -30,7 +27,6 @@ input {
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
   border-radius: 2px;
   width: 100%;
- 
 }
 .input-default {
 	font-family: "open_sanslight";
@@ -43,13 +39,7 @@ input {
 	width: 190px;
 	display: inline-block;
 }
-
-
-
-
-
 .feedback-message {
-
 	padding: 10px 10px;
 	margin: 0;
 	resize: none;
@@ -63,13 +53,9 @@ input {
   border-radius: 2px;
   border-style: inset;
   border:1px solid #D6D5D3;
-
 }
-
 .captcha-wrap {
-
 }
-
 .captcha-pic {
 	width: 100%;
 }
@@ -101,12 +87,10 @@ input {
 	font-size: 12px;
 	color: #c7c6c6;
 	box-sizing:border-box;
-
 } 
 .feedback-buttons-wrap {
 	width: 345px;
 	margin: 30px auto;
-
 }
 .feedback-button {
 	width:120px;
@@ -127,10 +111,7 @@ input {
   -moz-transition: ease 0.5s;
   -o-transition: ease 0.5s;
    transition: ease 0.5s;
-  
-}
-
-
+ }
   .feedback-button:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
@@ -146,7 +127,6 @@ input {
   border: 1px solid #D2D2D2;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
 }
- 
 .reset-button:hover {
   background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
@@ -154,6 +134,3 @@ input {
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
 }
-
-
-
