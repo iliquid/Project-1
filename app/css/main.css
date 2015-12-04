@@ -419,6 +419,9 @@ a.contacts-link:visited {
 .no-cssgradients .add-project-bg {
 	background-image: url(../img/ie-add-project.png);
 }
+.no-cssgradients .skills-item {
+	background-image: url(../img/ie-tag.png);
+}
 .no-opacity .portfolio-title-overlay {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
