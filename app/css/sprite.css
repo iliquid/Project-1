@@ -92,16 +92,3 @@
   width: 24px;
   height: 18px;
 }
-
-.spritesheet {
-  
-  
-
-}
-.tag {
-  background-image: url(../img/sprite.png);
-  background-repeat: no-repeat;
-  background-position:-7px -630px;
-  width: 9px;
-  height: 18px;
-}

@@ -13,9 +13,10 @@ body {
   content: "";
   display: table;
   clear: both;
+
 }
 .wrapper {
-	font-family: open_sanssemibold;
+	font-family: "open_sanssemibold";
 	overflow: hidden;
 	min-height: 100%;
 	margin-bottom:-60px;
@@ -23,7 +24,8 @@ body {
 .holder {
 	margin-top:80px;
 	height: 60px;
-	background: #333;
+
+	
 }
 
 .page-header {
@@ -110,7 +112,7 @@ body {
 .menu-item-link {
 	text-decoration: none;
 	font-size: 20px;
-  font-family: "Open Sans Semibold";
+  font-family: "open_sanssemibold";
   color: #1E7465;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.35);
   padding-left: 30px;
@@ -137,7 +139,7 @@ body {
 	border-top-right-radius: 5px;
 	border:1px solid #E7BF6F;
 	font-size: 20px;
-  font-family: "Open Sans Semibold";
+  font-family: "open_sanssemibold";
   color: rgb(208, 152, 44);
  	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.4);
   text-align: left;
@@ -157,7 +159,7 @@ body {
 }
 .contacts-list-item {
 	color: #727070;
-	font-family: "Open Sans";
+	font-family: "open_sansregular";
   position: relative;
   font-size: 14px;
   height: 37px;
@@ -170,6 +172,16 @@ body {
   background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+}
+.contacts-link {
+	color: #727070;
+	font-family: "open_sansregular";
+	font-size: 14px;
+}
+a.contacts-link:visited {
+	color: #fff;
+	font-family: "open_sansregular";
+	font-size: 14px;
 }
 .contacts-list-item:hover {
 	background-image: -moz-linear-gradient( 90deg, rgb(242,231,208) 0%, rgba(255,255,255,0) 100%);
@@ -204,7 +216,7 @@ body {
 	padding:0 0 0 44px;
 	margin: 0;
 	font-size: 24px;
-  font-family: "Open Sans Semibold";
+  font-family: "open_sanssemibold";
   color: #EEEDEC;
   text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
   
@@ -281,19 +293,21 @@ body {
 }
 .title-name {
 	padding: 7px 0 7px 0;
-	font-family: "Open Sans Semibold";
+	font-family: "open_sanssemibold";
 	background: #F2F2F2;
 	font-size: 13.35px;
 	text-align: center;
 	color: #727070;
 	display: block;
+	word-wrap:break-word;
 }
 
 .portfolio-desc {
 	margin: 0;
 	padding: 5px;
-	font-family: "Open Sans Light";
+	font-family: "open_sanslight";
 	font-size:12px;
+	color: #727070;
 	text-align: center;
 	background: #fff;
 	border-bottom-left-radius: 5px;
@@ -304,7 +318,7 @@ body {
 	display: block;
 	text-align: center;
 	padding:0 0 25px 0;
-	font-family: "Open Sans Semibold";
+	font-family: "open_sanssemibold";
 	font-size: 14px;
 	color: #727070;
 }
@@ -360,12 +374,11 @@ body {
 	margin-left:310px;
 }
 .auth-link {
-	font-family: "Open Sans";
-	font-weight: bold;
+	font-family: "open_sansbold";
 	font-size: 12px;
 	display: block;
 	text-transform: uppercase;
-	color: rgb(50,50,50);
+	color: #9C9C9C;
 	text-decoration: none;
 	text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.85);
 	
@@ -389,6 +402,47 @@ body {
 .copyright-text {
 	padding: 0;
 	margin: 0;
-	font-family: "Open Sans Light";
+	font-family: "open_sanslight";
 	font-size: 12px;
+	color:#727070
+}
+
+
+.no-cssgradients .contacts-header {
+	background-image: url(../img/ie-contacts.png);
+	border:none;
+}
+.no-cssgradients .menu-item-link {
+	background-image: url(../img/ie-menu-idle.png);
+	border:none;
+}
+.no-cssgradients .link-active {
+	background-image: url(../img/ie-menu-active.png);
+	border-top:none;
+}
+.no-cssgradients .menu-item-link:hover {
+	background-image: url(../img/ie-menu-hover.png);
+	border-top:none;
+}
+.no-cssgradients .right-col-header {
+	background-image: url(../img/ie-rc-header.png);
+	border-top:none;
+}
+.no-cssgradients .social-item {
+	background-image: url(../img/ie-socials.png);
+}
+.no-cssgradients .page-footer {
+	background: #fff;
+}
+.no-cssgradients .reset-button {
+	border:1px solid #2D9A7F;
+}
+.no-cssgradients .add-project-bg {
+	background-image: url(../img/ie-add-project.png);
+}
+.no-opacity .portfolio-title-overlay {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+.no-opacity .portfolio-title-overlay:hover {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
