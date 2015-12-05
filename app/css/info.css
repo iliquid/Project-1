@@ -169,7 +169,7 @@
 	transform: translateY(-50%) translateX(-50%);
 	top:50%;	
 	left:30px;
-	z-index:999;
+	z-index:99999;
 }
 .university:before {
 	position: absolute;
@@ -182,7 +182,7 @@
 	transform: translateY(-50%) translateX(-50%);
 	top:50%;	
 	left:30px;
-	z-index:999;
+	z-index:99999;
 }
 .courses:before {
 	position: absolute;
@@ -195,5 +195,5 @@
 	transform: translateY(-50%) translateX(-50%);
 	top:50%;	
 	left:30px;
-	z-index:999;
+	z-index:99999;
 }

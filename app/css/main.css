@@ -13,6 +13,7 @@ body {
   content: "";
   display: table;
   clear: both;
+  
 }
 .wrapper {
 	font-family: "open_sanssemibold";
@@ -325,8 +326,8 @@ a.contacts-link:visited {
   background-image: -ms-linear-gradient( 90deg, rgb(237,235,234) 0%, rgb(251,249,249) 94%, rgb(255,255,255) 100%);
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
   position: relative;
-  height: 150px;
-  line-height: 250px;
+  height: 130px;
+  line-height: 200px;
 }
 .add-project {
 	text-decoration: none;
@@ -339,10 +340,14 @@ a.contacts-link:visited {
 	color: #727070;
 	position: relative;
 }
+.add-project:hover {
+	text-decoration: underline;
+	
+}
  .add-project:after{
  	content: "";
 	position: absolute;
-	top: 40px;
+	top: 25px;
 	background: #F7F7F7;
 	right: 60px;
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.004),inset 2px 2.866px 0px 0px rgba(199, 199, 199, 0.75);
@@ -353,13 +358,13 @@ a.contacts-link:visited {
 }
 .add-project:before {
 	position: absolute;
-	top:55px;
-	left: 70px;
+	top: 41px;
+	left: 71px;
 	content: "";
 	background: url(../img/sprite.png) no-repeat -4px -392px;
 	width: 20px;
 	height: 20px;
-	z-index: 20;
+	z-index: 9999;
 }
 .page-footer {
 	height: 60px;
@@ -455,9 +460,64 @@ a.contacts-link:visited {
 .no-cssgradients .skills-item {
 	background-image: url(../img/ie-tag.png);
 }
+.no-cssgradients .add-project:after{
+ 	 	position: relative;
+}
 .no-opacity .portfolio-title-overlay {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
 }
 .no-opacity .portfolio-title-overlay:hover {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.no-csstransforms .jobs-info:before {
+	position: absolute;
+	top:35%;
+	left: 7px;
+	z-index:9999;
+background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position:-3px -658px;
+	width: 21px;
+	height: 19px;
+	content: "";
+	/*background: #333;*/
+	
+}
+.no-csstransforms .school:before {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position:-4px -682px;
+	position: absolute;
+	top:35%;
+	left: 7px;
+	z-index:9999;
+	width: 21px;
+	height: 19px;
+	content: "";
+}
+.no-csstransforms  .university:before {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position:0 -710px;
+	position: absolute;
+	top:35%;
+	left: 4px;
+	z-index:9999;
+	width: 27px;
+	height: 19px;
+	content: "";
+	
+}
+.no-csstransforms .courses:before {
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position:-6px -737px;
+	position: absolute;
+	top:35%;
+	left: 7px;
+	z-index:9999;
+	width: 21px;
+	height: 19px;
+	content: "";
+
 }
