@@ -19,21 +19,19 @@
    content: "";
    display: inline-block;
 }
-input {
-	border:1px solid #D6D5D3;
-	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
-  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-  border-radius: 2px;
-  width: 100%;
-}
 .input-default {
 	font-family: "open_sanslight";
 	font-size: 12px;
 	color: #c7c6c6;
   padding: 10px 10px;
   box-sizing:border-box;
+  border:1px solid #D6D5D3;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  border-radius: 2px;
+  width: 100%;
 }
 .input-item{
 	width: 190px;
@@ -54,8 +52,7 @@ input {
   border-style: inset;
   border:1px solid #D6D5D3;
 }
-.captcha-wrap {
-}
+
 .captcha-pic {
 	width: 100%;
 }
@@ -82,6 +79,13 @@ input {
 	line-height: 80px;
 }
 .input-captcha {
+	border:1px solid #D6D5D3;
+	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
+  border-radius: 2px;
+  width: 100%;
 	padding:8px 10px;
 	font-family: "open_sanslight";
 	font-size: 12px;
@@ -94,8 +98,7 @@ input {
 }
 .feedback-button {
 	width:120px;
-	height: 40px;
-	padding: 0;
+	padding: 9px 2px;
 	margin: 0;
 	border-radius: 5px;
   background-image: -moz-linear-gradient( 90deg, rgb(67,183,150) 0%, rgb(128,232,203) 100%);

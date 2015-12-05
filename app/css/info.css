@@ -1,5 +1,5 @@
 .skills-block {
-	padding: 40px 0 20px 40px;
+	padding: 28px 0 17px 40px;
 }
 .avatar-block {
 	float: left;
@@ -37,16 +37,17 @@
 }
 .info-text {
 	font-family: "open_sansregular";
+	padding-right: 5px;
 	font-size: 14px;
 	color: #727070;
 }
 .skills-label {
 	float: left;
-	margin: 25px 0 0 19px;
+	margin: 20px 0 0 19px;
 }
 .skills-row {
 	margin-left: 160px;
-	margin-top: 25px;
+	margin-top: 20px;
 	width: 230px;
 }
 .skills-list {
