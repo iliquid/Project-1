@@ -68,12 +68,18 @@ body {
   margin-left:15px;
   text-indent: 999px;
   overflow: hidden;
+  position: relative;
 }
 .social-link {
     background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     display: block;
     margin:9px auto;
+}
+.social-item:focus {
+    position: absolute;	
+    top:7px;
+    left:13px;
 }
 .content {
 	border-top:1px solid #DECE96;
@@ -124,18 +130,23 @@ body {
 	display: block;
 	overflow: hidden;
 	white-space: nowrap;
-
 }
 .menu-item:hover {
 	background-image: -moz-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
 } 
+.menu-item-link:focus {
+	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+  box-sizing:border-box;
+} 
 .link-active, .link-active:hover{
 	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
-  background-image: linear-gradient(to top 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   box-sizing:border-box;
 }
@@ -187,11 +198,17 @@ body {
 	font-family: "open_sansregular";
 	font-size: 14px;
 	display: block;
+	white-space: nowrap;
 	text-overflow: ellipsis;
 	
 }
-a.contacts-link:visited {
+.contacts-link:visited {
 	color: #fff;
+	font-family: "open_sansregular";
+	font-size: 14px;
+}
+.contacts-link:focus {
+	color: #ccc;
 	font-family: "open_sansregular";
 	font-size: 14px;
 }
@@ -278,7 +295,9 @@ a.contacts-link:visited {
 	display: block;
 	text-decoration: none;
 	position: relative;
+
 }
+
 .portfolio-title-overlay {
 	opacity: 0.2;
 	height: 100%;
@@ -300,6 +319,7 @@ a.contacts-link:visited {
 	width: 100%;
 	border-radius:5px;
 }
+
 .title-name {
 	padding: 7px 0 7px 0;
 	font-family: "open_sanssemibold";
@@ -482,9 +502,7 @@ background-image: url(../img/sprite.png);
 	background-position:-3px -658px;
 	width: 21px;
 	height: 19px;
-	content: "";
-	/*background: #333;*/
-	
+	content: "";	
 }
 .no-csstransforms .school:before {
 	background-image: url(../img/sprite.png);

@@ -93,6 +93,7 @@
 	box-sizing:border-box;
 } 
 .feedback-buttons-wrap {
+
 	width: 345px;
 	margin: 30px auto;
 }
@@ -120,6 +121,12 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(58,160,135) 0%, rgb(95,220,189) 100%);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+  .feedback-button:focus {
+ color: white;
+}
+  .reset-button:focus {
+ color: red;
 }
 .reset-button {
 	float: right;
