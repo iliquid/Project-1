@@ -7,7 +7,7 @@ html, body {
 	background-attachment: fixed;
 }
 body {
-	min-width:1000px;
+	min-width:960px;
 }
 .clearfix:after {
   content: "";
@@ -365,6 +365,10 @@ body {
 	text-decoration: underline;
 	
 }
+.add-project:focus {
+	color: red;
+	
+}
  .add-project:after{
  	content: "";
 	position: absolute;
@@ -541,4 +545,7 @@ background-image: url(../img/sprite.png);
 	height: 19px;
 	content: "";
 
+}
+.no-cssgradients body {
+	background: #ECE4A3;
 }
