@@ -1,7 +1,7 @@
-$(document).ready(function() {
-
-	if(!Modernizr.input.placeholder) {
-	$('input', 'textarea').placeholder();
+$(document).ready(function(){
+		if(!Modernizr.input.placeholder) {
+			$('input, textarea').placeholder();
 	}
 	
 });
+
