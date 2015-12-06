@@ -135,6 +135,7 @@ body {
 	background-image: -moz-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
+  background-image: linear-gradient(to top 90deg, rgb(62,183,153) 0%, rgb(126,232,206) 100%);
   box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   box-sizing:border-box;
 }
@@ -435,6 +436,8 @@ a.contacts-link:visited {
 }
 .no-cssgradients .link-active {
 	background-image: url(../img/ie-menu-active.png);
+	background: #333;
+	z-index: 99999;
 	border-top:none;
 }
 .no-cssgradients .menu-item-link:hover {
