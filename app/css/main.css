@@ -22,7 +22,7 @@ body {
 	margin-bottom:-60px;
 }
 .holder {
-	margin-top:80px;
+	margin-top:-60px;
 	height: 60px;
 }
 .page-header {
@@ -233,8 +233,7 @@ body {
 	margin-left:310px;
 }
 .right-col-header {
-	height: 55px;
-	line-height: 50px;
+	line-height: 55px;
   border:1px solid #9C9C9C;
   background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -260,6 +259,9 @@ body {
 	border-bottom-left-radius:5px;
 	border-bottom-right-radius:5px;
 	margin:0 0 35px 0;
+}
+.right-col-elem:first-child {
+	margin:0;
 }
 .portfolio-list {
 	overflow: hidden;
