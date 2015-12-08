@@ -50,45 +50,29 @@
 /*Social Idle*/
 
 .fb {
-  background-position: -4px -191px;
-  width: 10px;
-  height: 22px;
+  background-position: 8px -191px;
 }
 .vk {
-  background-position: -4px -527px;
-  width: 15px;
-  height: 19px;
+  background-position: 7px -527px;
 }
 .git {
-  background-position: -4px -251px;
-  width: 29px;
-  height: 23px;
+  background-position: 0px -251px;
 }
 .twit {
-  background-position: -4px -449px;
-  width: 24px;
-  height: 18px;
+  background-position: 1px -449px;
 }
 
 /* Social Hover */
 
 .fb:hover {
-  background-position: -4px -221px;
-  width: 10px;
-  height: 22px;
+  background-position: 8px -221px;
 }
 .vk:hover {
-  background-position: -4px -554px;
-  width: 15px;
-  height: 19px;
+  background-position: 7px -554px;
 }
 .git:hover {
-  background-position: -4px -282px;
-  width: 29px;
-  height: 23px;
+  background-position: 0px -282px;
 }
 .twit:hover {
-  background-position: -4px -475px;
-  width: 24px;
-  height: 18px;
+  background-position: 1px -475px;
 }
