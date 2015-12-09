@@ -80,23 +80,23 @@
 					<form action="#1" class="feedback-form">
 						<ul class="feedback-inputs">
 							<li class="input-item">
-								<label class="name-label" for="input-name input-default">Ваше имя</label>
-								<input class="input-name input-default" type="text" placeholder="Ваше имя">
+								<label class="name-label" for="username">Ваше имя</label>
+								<input class="input-name input-default" id="username" type="text" placeholder="Ваше имя">
 							</li>
 							<li class="input-item email-item">
-								<label class="email-label" for="input-name input-default">Ваш Email</label>
-								<input class="input-name input-default" type="text" placeholder="Ваше имя">
+								<label class="email-label" for="user-email">Ваш Email</label>
+								<input class="input-name input-default" id="user-email" type="text" placeholder="Ваше имя">
 							</li>
 						</ul>
-						<label class="message-label" for="feedback-message input-default">Сообщение</label>
-						<textarea class="feedback-message input-default" placeholder="Кратко в чем суть"></textarea>
-						<label class="captcha-label" for="input-captcha">Введите код, указанный на картинке</label>
+						<label class="message-label" for="message">Сообщение</label>
+						<textarea class="feedback-message input-default" id="message" placeholder="Кратко в чем суть"></textarea>
+						<label class="captcha-label" for="captcha">Введите код, указанный на картинке</label>
 						<div class="captcha-wrap">
 							<div class="captcha-pic-wrap">
 								<img src="img/captcha.png" alt="" class="captcha-pic">
 							</div>
 							<div class="captcha-input-wrap">
-								<input class="input-captcha" type="text" placeholder="Введите капчу">
+								<input class="input-captcha" id="captcha" type="text" placeholder="Введите капчу">
 							</div>
 						</div>
 						<div class="feedback-buttons-wrap clearfix">
