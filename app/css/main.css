@@ -21,9 +21,24 @@ body {
 	min-height: 100%;
 	margin-bottom:-60px;
 }
-.holder {
-	margin-top:-60px;
+.page-footer {
 	height: 60px;
+	margin-top:-60px;
+	background-image: -moz-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
+  box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.footer-wrap {
+	width: 960px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.holder {
+	height: 60px;
+}
+.right-col .right-col-elem:last-child {
+	margin-bottom:100px;
 }
 .page-header {
 	border-bottom:7px solid white;
@@ -260,8 +275,8 @@ body {
 	border-bottom-right-radius:5px;
 	margin:0 0 35px 0;
 }
-.right-col-elem:first-child {
-	margin:0;
+.right-col-elem:last-child {
+	margin-bottom:35px;
 }
 .portfolio-list {
 	overflow: hidden;
@@ -399,7 +414,7 @@ body {
 }
 .page-footer {
 	height: 60px;
-	margin-top:-60px;
+	/*margin-top:-60px;*/
 	background-image: -moz-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(240,240,240) 0%, rgb(255,255,255) 100%);
