@@ -9,9 +9,14 @@
 		<title>Мои работы - Корнеев С.С.</title>
 		<script src="libs/modernizr/modernizr.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/sprite.css">
 		<link rel="stylesheet" type="text/css" href="css/info.css">
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/bPopup/jquery.bpopup.min.js"></script>
+		<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="libs/normalize-css/normalize.css">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -33,6 +38,51 @@
 	</head>
 	<body>
 		<div class="wrapper clearfix">
+
+
+<div class="add-project-wrapper" id="element_to_pop_up">
+	<form action="#1" class="add-project-form" id="jsValidate" method="get" action="">
+
+		<fieldset><div class="input-wrap">
+					<label class="add-label" for="add-title">Название проекта
+						<input type="text" name="add-title" id="add-title" class="add-form project-title" placeholder="Введите название" required>
+					</label>
+					<!-- <div class="tooltip">Введите название</div> -->
+				</div>
+				<div class="input-wrap"><label class="visible-upload-label">Картинка</label>
+				<div class="upload-wrapper clearfix add-form">
+					<span>Загрузите картинку</span>
+					<input type="file" name="project_file" id="file" class="inputfile" required>
+					<label class="upload-label-button" for="file"></label>
+				</div>
+				<!-- <div class="tooltip">картинка</div> -->
+			</div>
+			<div class="input-wrap"><label class="add-label" for="add-url">URL проекта
+				<input type="text" name="project_url" id="add-url" class="add-form project-url" placeholder="Добавьте ссылку" required>
+			</label>
+			<!-- <div class="tooltip">ССЫЛКА на проект</div> -->
+		</div>
+		<div class="input-wrap">
+			<label class="add-label" for="add-desc">Описание проекта
+				<textarea name="project_desc" id="add-desc" cols="30" rows="10" class="add-form project-description" placeholder="Пара слова о Вашем проекте"  required></textarea>
+			</label>
+			<!-- <div class="tooltip">Описание</div> -->
+		</div>
+		<button class="add-project-button" type="submit">Добавить</button></fieldset>
+
+</form>
+<script>
+
+$("#jsValidate").validate({
+	 errorElement: "div",
+	 errorClass: "tooltip",
+   
+});
+
+</script>
+</div>
+
+
 			<header class="page-header">
 				<div class="page-header-wrap clearfix">
 					<div class="logo-wrap">
@@ -81,7 +131,7 @@
 						<span class="title-name">arendacity.by</span>
 						<p class="portfolio-desc">Сайт фирмы занимающейся арендой строительного оборудования и инструмента</p>
 					</li>
-				<!-- 	<li class="portfolio-list-item">
+					<li class="portfolio-list-item">
 						<a class="portfolio-title" href="//a-industry.ru" title="a-industry.ru" target="_blank">
 							<div class="portfolio-title-overlay"></div>
 							<img src="files/pic2.jpg" class="portfolio-thumb" alt="a-industry.ru">
@@ -104,7 +154,7 @@
 						</a>
 						<span class="title-name">a-industry.ru</span>
 						<p class="portfolio-desc">Сайт по услугам разработки продающих лендингов.</p>
-					</li> -->
+					</li>
 					<li class="portfolio-list-item">
 						<a class="portfolio-title" href="//a-industry.ru" title="a-industry.ru" target="_blank">
 							<div class="portfolio-title-overlay"></div>
@@ -116,7 +166,7 @@
 					
 					<!-- Project add Button goes here -->
 					<li class="portfolio-list-item add-project-bg">
-						<a href="#1" class="add-project" title="Добавить проект">Добавить проект</a>
+						<a href="#"  id="my-button" class="add-project" title="Добавить проект">Добавить проект</a>
 					</li>
 				</ul>
 			</article>
@@ -135,5 +185,6 @@
 		</div>
 	</div>
 </footer>
+
 </body>
 </html>
