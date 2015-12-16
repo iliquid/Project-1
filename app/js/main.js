@@ -1,3 +1,4 @@
+// Плейсхолдеры для IE8
 $(document).ready(
 	function(){
 		if(!Modernizr.input.placeholder) {
@@ -6,10 +7,7 @@ $(document).ready(
 });
 
 
-
-    // Semicolon (;) to ensure closing of earlier scripting
-    // Encapsulation
-    // $ is assigned to jQuery
+// Вызов модального окна по клику
     (function($) {
 
          // DOM Ready
@@ -31,3 +29,22 @@ $(document).ready(
 
     })(jQuery);
 
+// Подставляем имя файла в инпут
+$(document).ready( function() {
+    				$("#file").change(function(){
+         		var filename = $(this).val().replace(/.*\\/, "");
+         		$("#filename").val(filename);
+    });
+});
+
+//Валидация формы добавления проекта с выводом тултипов
+	$("#jsValidate").validate({
+			errorElement: "div",
+			errorClass: "tooltip",
+		messages: {
+			add_title: "Укажите название проекта",
+			project_url: "Укажите URL проекта",
+			project_desc: "Напишите краткое описание проекта",
+			project_file: "Добавьте изображение проекта"
+		}
+		});

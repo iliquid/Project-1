@@ -13,10 +13,6 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/sprite.css">
 		<link rel="stylesheet" type="text/css" href="css/info.css">
-		<script src="libs/jquery/jquery.min.js"></script>
-		<script src="libs/bPopup/jquery.bpopup.min.js"></script>
-		<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
-		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="libs/normalize-css/normalize.css">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -39,48 +35,45 @@
 	<body>
 		<div class="wrapper clearfix">
 
-
-<div class="add-project-wrapper" id="element_to_pop_up">
-	<form action="#1" class="add-project-form" id="jsValidate" method="get" action="">
-
-		<fieldset><div class="input-wrap">
+<div class="title-wrap" id="element_to_pop_up"><h3 class="add-project-title">Добавление проекта</h3>
+		<div class="add-project-wrapper">
+			<form action="#1" class="add-project-form" id="jsValidate" method="post" action="">
+				<div class="input-wrap">
 					<label class="add-label" for="add-title">Название проекта
-						<input type="text" name="add-title" id="add-title" class="add-form project-title" placeholder="Введите название" required>
+						<input type="text" name="add_title" id="add_title" class="add-form project-title" placeholder="Введите название" required>
 					</label>
-					<!-- <div class="tooltip">Введите название</div> -->
+					
 				</div>
-				<div class="input-wrap"><label class="visible-upload-label">Картинка</label>
-				<div class="upload-wrapper clearfix add-form">
-					<span>Загрузите картинку</span>
-					<input type="file" name="project_file" id="file" class="inputfile" required>
-					<label class="upload-label-button" for="file"></label>
+				<div class="input-wrap clearfix">
+					<label class="visible-upload-label">Картинка</label>
+					<div class="fake-input">
+						
+						<label class="upload-label-button" for="file">
+							<input type="file" id="file" class="inputfile" value="">
+						</label>
+						<input type="text" id="filename" class="filename-class add-form" placeholder="Картинка" name="project_file" required readonly>
+						
+					</div>
+					
+					
+					
 				</div>
-				<!-- <div class="tooltip">картинка</div> -->
+				<div class="input-wrap"><label class="add-label" for="add-url">URL проекта
+					<input type="text" name="project_url" id="add-url" class="add-form project-url" placeholder="Добавьте ссылку" required>
+				</label>
+				<!-- <div class="tooltip">ССЫЛКА на проект</div> -->
 			</div>
-			<div class="input-wrap"><label class="add-label" for="add-url">URL проекта
-				<input type="text" name="project_url" id="add-url" class="add-form project-url" placeholder="Добавьте ссылку" required>
-			</label>
-			<!-- <div class="tooltip">ССЫЛКА на проект</div> -->
-		</div>
-		<div class="input-wrap">
-			<label class="add-label" for="add-desc">Описание проекта
-				<textarea name="project_desc" id="add-desc" cols="30" rows="10" class="add-form project-description" placeholder="Пара слова о Вашем проекте"  required></textarea>
-			</label>
-			<!-- <div class="tooltip">Описание</div> -->
-		</div>
-		<button class="add-project-button" type="submit">Добавить</button></fieldset>
-
-</form>
-<script>
-
-$("#jsValidate").validate({
-	 errorElement: "div",
-	 errorClass: "tooltip",
-   
-});
-
-</script>
-</div>
+			<div class="input-wrap">
+				<label class="add-label" for="add-desc">Описание проекта
+					<textarea name="project_desc" id="add-desc" cols="30" rows="10" class="add-form project-description" placeholder="Пара слова о Вашем проекте"  required></textarea>
+				</label>
+				
+			</div>
+			<button class="add-project-button" type="submit">Добавить</button>
+		</form>
+	
+		
+	</div></div>
 
 
 			<header class="page-header">
@@ -185,6 +178,9 @@ $("#jsValidate").validate({
 		</div>
 	</div>
 </footer>
-
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bPopup/jquery.bpopup.min.js"></script>
+<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

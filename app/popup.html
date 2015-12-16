@@ -4,8 +4,8 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="Project-1">
- 		<meta name="keywords" content="Project-1">
-  	<meta name="author" content="Korneev S">
+		<meta name="keywords" content="Project-1">
+		<meta name="author" content="Korneev S">
 		<title>Главная - Корнеев С.С.</title>
 		<script src="libs/modernizr/modernizr.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
@@ -13,6 +13,10 @@
 		<link rel="stylesheet" type="text/css" href="css/info.css">
 		<link rel="stylesheet" type="text/css" href="css/sprite.css">
 		<link rel="stylesheet" type="text/css" href="css/popup.css">
+		<script src="libs/jquery/jquery.min.js"></script>
+		<script src="libs/jquery-placeholder/jquery.placeholder.min.js"></script>
+		<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="libs/normalize-css/normalize.css">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -32,49 +36,60 @@
 		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 	</head>
-		<body>
-			
-	<div class="add-project-wrapper" id="element_to_pop_up">
-			<form action="#1" class="add-project-form">
+	<body>
+	<div class="title-wrap" id="element_to_pop_up"><h3 class="add-project-title">Добавление проекта</h3>
+		<div class="add-project-wrapper">
+			<form action="#1" class="add-project-form" id="jsValidate" method="post" action="">
 				<div class="input-wrap">
 					<label class="add-label" for="add-title">Название проекта
-						<input type="text" name="" id="add-title" class="add-form project-title" placeholder="Введите название">
+						<input type="text" name="add_title" id="add_title" class="add-form project-title" placeholder="Введите название" required>
 					</label>
-						<div class="tooltip">Введите название</div>
+					
 				</div>
+				<div class="input-wrap clearfix">
+					<label class="visible-upload-label">Картинка</label>
+					<div class="fake-input">
+						
+						<label class="upload-label-button" for="file">
+							<input type="file" id="file" class="inputfile" value="">
+						</label>
+						<input type="text" id="filename" class="filename-class add-form" placeholder="Картинка" name="project_file"  required readonly>
+						
+					</div>
+					
+					
+					
+				</div>
+				<div class="input-wrap"><label class="add-label" for="add-url">URL проекта
+					<input type="text" name="project_url" id="add-url" class="add-form project-url" placeholder="Добавьте ссылку" required>
+				</label>
+				<!-- <div class="tooltip">ССЫЛКА на проект</div> -->
+			</div>
+			<div class="input-wrap">
+				<label class="add-label" for="add-desc">Описание проекта
+					<textarea name="project_desc" id="add-desc" cols="30" rows="10" class="add-form project-description" placeholder="Пара слова о Вашем проекте"  required></textarea>
+				</label>
 				
+			</div>
+			<button class="add-project-button" type="submit">Добавить</button>
+			<div id="success">Success</div>
+		</form>
+		<script>
+		$("#jsValidate").validate({
+			errorElement: "div",
+			errorClass: "tooltip",
+			
+		messages: {
+			add_title: "Укажите название проекта",
+			project_url: "Укажите URL проекта",
+			project_desc: "Напишите краткое описание проекта",
+			project_file: "Добавьте изображение проекта"
+		}
+		});
+		// $("#jsValidate") = function(e) {
+		// 	e.preventDefault();
+		// };
 
-					<div class="input-wrap"><label class="visible-upload-label">Картинка</label>
-										<div class="upload-wrapper clearfix add-form">
-													<span>Загрузите картинку</span>
-													<input type="file" name="file" id="file" class="inputfile">
-										<label class="upload-label-button" for="file"></label>
-									
-										</div>
-<div class="tooltip">картинка</div>
-									</div>
-					
-					
-					<div class="input-wrap"><label class="add-label" for="add-url">URL проекта
-											<input type="text" name="" id="add-url" class="add-form project-url" placeholder="Добавьте ссылку">
-										</label>
-<div class="tooltip">ССЫЛКА на проект</div>
-									</div>
-					
-					
-				<div class="input-wrap">
-					<label class="add-label" for="add-desc">Описание проекта
-										<textarea name="" id="add-desc" cols="30" rows="10" class="add-form project-description" placeholder="Пара слова о Вашем проекте"></textarea>
-									</label>
-<div class="tooltip">Описание</div>
-								</div>
-					
-					
-
-					<button class="add-project-button">Добавить</button>
-
-
-
-				</form></div>
-		</body>
+	</script></div></div>
+</body>
 </html>

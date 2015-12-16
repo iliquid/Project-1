@@ -1,21 +1,34 @@
-input[aria-invalid="true"] {
-	border:2px solid red;
+textarea.tooltip, input.tooltip {
+	border:3px solid red;
+	border-radius:5px;
+  font-size: 12px;
+  color: #9a4e32;
+  font-family: open_sanssemibold;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+  line-height: 20px;
+  padding: 0 10px;
+  text-transform: lowercase;
+  white-space: nowrap;
 }
-
-input .error {
-	border:3px solid red; !important
-}
-
 .add-project-wrapper {
-	margin: 40px auto;
-	width:365px;
-	padding:10px 20px 20px 20px;
+	padding:20px 20px 20px 20px;
 	border-radius: 5px;
   background-image: -moz-linear-gradient( 90deg, rgb(240,238,237) 0%, rgb(250,249,248) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(240,238,237) 0%, rgb(250,249,248) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(240,238,237) 0%, rgb(250,249,248) 100%);
   box-shadow: 0px 11px 27px 0px rgba(159, 159, 159, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
-  display: none;
+}
+.title-wrap {
+	margin: 40px auto;
+	width:365px;
+	display: none;
+}
+.add-project-title {
+	color: #f8f7f6;
+	font-family: open_sanslight;
+	font-size:12px;
+	margin-left: 20px;
+	margin-bottom:3px;
 }
 .add-label {
 	font-family: open_sansregular;
@@ -38,53 +51,38 @@ input .error {
 	padding: 0 0 0 10px;
 	box-sizing:border-box;
 	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 2px 2px 0px rgba(114, 112, 112, 0.1);
-  
 }
 .visible-upload-label {
 	font-family: open_sansregular;
 	font-size: 14px;
 	color: #727070;
 }
-
-.upload-wrapper {
-	line-height: 40px;
-	height: 41px;
-	border-radius: 4px;
-	background: #fff;
-	vertical-align: middle;
-}
 .inputfile {
 	width: 0.1px;
 	height: 0.1px;
-	opacity: 0;
+	opacity: 1;
 	overflow: hidden;
 	position: absolute;
 	z-index: -1;
 
 }
 .upload-label-button {
-  display: block;
-  float: right;
+	float: right;
+	display: inline-block;
   border-radius: 4px;
   background-image: -webkit-linear-gradient(bottom, rgb(229,227,226) 0%, rgb(249,250,250) 94%, rgb(255,255,255) 100%);
   background-image: -o-linear-gradient(bottom, rgb(229,227,226) 0%, rgb(249,250,250) 94%, rgb(255,255,255) 100%);
   background-image: linear-gradient(to top, rgb(229,227,226) 0%, rgb(249,250,250) 94%, rgb(255,255,255) 100%);
-  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07),inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
+
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-left:1px solid #D6D4D3;
-  width: 52px;
-  height: 39px;
-  position: relative;
+  border:1px solid #D6D4D3;
+   width: 52px;
+  height: 37px;
   cursor: pointer;
+  position: relative;
+  top:10px;
 }
-
-
-
-
-
-
-
 .upload-label-button:before {
 	position: absolute;
 	content: "";
@@ -100,6 +98,13 @@ input .error {
 .upload-label-button:focus {
 	background: #111;
 	outline: 1px solid grey;
+}
+.filename-class {
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	border-right:none;
+	width:271px;
+	
 }
 .project-description {
 	resize: none;
@@ -140,7 +145,7 @@ input .error {
 color: #e7e7e7;
 }
 
-div .tooltip {
+div.tooltip {
   background-image: -webkit-linear-gradient(bottom, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
   background-image: -o-linear-gradient(bottom, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
   background-image: linear-gradient(to top, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
@@ -159,11 +164,15 @@ div .tooltip {
   	padding: 0 10px;
   		text-transform: lowercase;
   		white-space: nowrap;
+  		-webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+   transition: ease 0.5s;
 }
-div .tooltip:after {
+div.tooltip:after {
     content: ''; 
     position: absolute;
     right: -11px; top: 4px;
     border: 6px solid transparent;
     border-left: 6px solid #E48E70;
-   }
+  }
