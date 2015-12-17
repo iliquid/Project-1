@@ -7,7 +7,7 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
+
 	position: relative;
 	text-align: justify;
 }
@@ -24,6 +24,7 @@
 	font-size: 12px;
 	color: #c7c6c6;
   padding: 10px 10px;
+  position: relative;
   box-sizing:border-box;
   border:1px solid #D6D5D3;
 	background-image: -moz-linear-gradient( 90deg, rgb(233,231,231) 0%, rgba(251,249,249,0) 100%);
@@ -38,6 +39,7 @@
 	display: inline-block;
 }
 .feedback-message {
+  position: relative;
 	padding: 10px 10px;
 	margin: 0;
 	resize: none;
@@ -70,6 +72,7 @@
 }
 .name-label, .email-label, .message-label {
 	margin-bottom:5px;
+  position: relative;
 }
 .captcha-label {
 	margin: 15px 0 5px 0;
@@ -77,6 +80,7 @@
 .captcha-input-wrap {
 	margin-left:212px;
 	line-height: 80px;
+  position: relative;
 }
 .input-captcha {
 	border:1px solid #D6D5D3;
@@ -143,4 +147,89 @@
   background-image: -ms-linear-gradient( 90deg, rgb(194,192,192) 0%, rgb(227,225,225) 87%, rgb(230,228,228) 90%, rgb(232,231,231) 100%);
   box-shadow: inset 0px -2px 3px 0px rgba(41, 41, 41, 0.05);
  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+div#username-error {
+    position: absolute;
+    top: 30px;
+    right: 104%;
+}
+div#user-email-error {
+    position: absolute;
+    top: 32px;
+    left: 104%;
+}
+div#user-email-error:after {
+    content: ''; 
+    position: absolute;
+    right: 224px; top: 4px;
+    border: 6px solid transparent;
+    border-right: 6px solid #E48E70;
+  }
+div#message-error {
+    position: absolute;
+     top: 67px;
+    right: 102%;
+    }
+
+div#captcha-error {
+    position: absolute;
+    top: 30px;
+    left: 104%;
+}
+div#captcha-error:after {
+    content: ''; 
+    position: absolute;
+    right: 193px; top: 4px;
+    border: 6px solid transparent;
+    border-right: 6px solid #E48E70;
+  }
+div.tooltip-feedback {
+  background-image: -webkit-linear-gradient(bottom, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+  background-image: -o-linear-gradient(bottom, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+  background-image: linear-gradient(to top, rgb(211,118,84) 0%, rgb(243,162,135) 90%);
+  box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.17),inset 0px 1px 0px 0px rgba(255, 255, 255, 0.25);
+  border:1px solid #F19A7C;
+  position: absolute;
+  height: 20px;
+  border-radius:5px;
+     font-size: 12px;
+     color: #9a4e32;
+    font-family: open_sanssemibold;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+    line-height: 20px;
+    padding: 0 10px;
+      text-transform: lowercase;
+   
+      white-space: nowrap;
+     
+      text-overflow:ellipsis;
+      
+      -webkit-transition: ease 0.5s;
+  -moz-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+   transition: ease 0.5s;
+}
+
+  div.tooltip-feedback:after {
+    content: ''; 
+    position: absolute;
+    right: -11px; top: 4px;
+    border: 6px solid transparent;
+    border-left: 6px solid #E48E70;
+    z-index: 999;
+  }
+  .wrap-input {
+    position: relative;
+  }
+  textarea.tooltip-feedback, input.tooltip-feedback {
+  border:3px solid red;
+  border-radius:5px;
+  color: #9a4e32;
+  font-family: open_sanssemibold;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
 }

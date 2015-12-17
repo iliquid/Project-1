@@ -13,6 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="css/form.css">
 		<link rel="stylesheet" type="text/css" href="css/sprite.css">
 		<link rel="stylesheet" type="text/css" href="css/info.css">
+		<link rel="stylesheet" type="text/css" href="css/popup.css">
 		<link rel="stylesheet" type="text/css" href="libs/normalize-css/normalize.css">
 		<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -77,26 +78,26 @@
 			<header class="right-col-header"><h1 class="rc-header-text">У вас интересный проект? Напишите мне</h1></header>
 			<article class="right-col-elem">
 				<div class="feedback-wrap">
-					<form action="#1" class="feedback-form">
+					<form action="#" class="feedback-form" id="jsFeedbackValidate" method="post">
 						<ul class="feedback-inputs">
 							<li class="input-item">
-								<label class="name-label" for="username">Ваше имя</label>
-								<input class="input-name input-default" id="username" type="text" placeholder="Ваше имя">
+								<div class="wrap-input"><label class="name-label" for="username">Ваше имя</label>
+																<input class="input-name input-default" id="username" type="text" placeholder="Ваше имя" name="username_name" required></div>
 							</li>
 							<li class="input-item email-item">
-								<label class="email-label" for="user-email">Ваш Email</label>
-								<input class="input-name input-default" id="user-email" type="text" placeholder="Ваше имя">
+								<div class="wrap-input"><label class="email-label" for="user-email">Ваш Email</label>
+																<input class="input-name input-default" id="user-email" type="text" placeholder="Ваша почта" name="usermail"  required></div>
 							</li>
 						</ul>
 						<label class="message-label" for="message">Сообщение</label>
-						<textarea class="feedback-message input-default" id="message" placeholder="Кратко в чем суть"></textarea>
+						<div class="wrap-input"><textarea class="feedback-message input-default" id="message" placeholder="Кратко в чем суть" name="message_text" required></textarea></div>
 						<label class="captcha-label" for="captcha">Введите код, указанный на картинке</label>
 						<div class="captcha-wrap">
 							<div class="captcha-pic-wrap">
 								<img src="img/captcha.png" alt="" class="captcha-pic">
 							</div>
 							<div class="captcha-input-wrap">
-								<input class="input-captcha" id="captcha" type="text" placeholder="Введите капчу">
+								<input class="input-captcha" id="captcha" type="text" placeholder="Введите капчу" name="captcha_sym" required>
 							</div>
 						</div>
 						<div class="feedback-buttons-wrap clearfix">
@@ -123,7 +124,9 @@
 	</div>
 </footer>
 <script src="libs/jquery/jquery.min.js"></script>
-<script src="libs/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
+<script src="libs/jquery-placeholder/jquery.placeholder.min.js"></script>
+
 </body>
 </html>

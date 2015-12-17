@@ -48,3 +48,16 @@ $(document).ready( function() {
 			project_file: "Добавьте изображение проекта"
 		}
 		});
+// Валидация формы фидбеков с выводом тултипов
+
+
+	$("#jsFeedbackValidate").validate({
+			errorElement: "div",
+			errorClass: "tooltip-feedback",
+		messages: {
+			username_name: "Пожалуйста, представьтесь",
+			usermail: "Укажите свой электронный ящик",
+			message_text: "Кратко о своем проекте",
+			captcha_sym: "Без капчи ничего не выйдет"
+				}
+		});
