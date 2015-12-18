@@ -17,6 +17,19 @@ textarea.tooltip, input.tooltip {
   background-image: -webkit-linear-gradient( 90deg, rgb(240,238,237) 0%, rgb(250,249,248) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(240,238,237) 0%, rgb(250,249,248) 100%);
   box-shadow: 0px 11px 27px 0px rgba(159, 159, 159, 0.75),inset 0px 6px 6px 0px rgba(255, 255, 255, 0.004);
+  position: relative;
+}
+.close-button {
+  position: absolute;
+  right:10px;
+  top:10px;
+}
+.close-button-link {
+  display: block;
+  background: url('../img/sprite.png') no-repeat -4px -4px;
+  width: 14px;
+  height: 14px;
+
 }
 .title-wrap {
 	margin: 40px auto;

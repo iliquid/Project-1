@@ -20,10 +20,23 @@ $(document).ready(
                 // Prevents the default action to be triggered. 
                 e.preventDefault();
 
+               
+               // {
+               //  	onClose: function() {
+               //  		$(".tooltip").css({"": ""});
+               //  	}
+               //  }
+
+
                 // Triggering bPopup when click event is fired
                 $('#element_to_pop_up').bPopup();
 
             });
+            $('.close-button-link').on('click', function(e) {
+            	e.preventDefault();
+            	$('#element_to_pop_up').bPopup().close();
+            }
+            	);
 
         });
 
