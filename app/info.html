@@ -41,10 +41,19 @@
 			<div class="close-button">
 				<a href="#1" class="close-button-link" title="Закрыть окно"></a>
 			</div>
-			<div class="error-alert">
+			<div id="error-alert">
+				
 					<div class="error-alert-title">Ошибка!</div>
 					<div class="error-alert-message">Не удалось добавить проект</div>
 			</div>
+											<div class="add-project-wrapper popup-message" id="success-alert">
+											<div class="close-button">
+												<a href="#1" class="close-button-link" title="Закрыть окно"></a>
+											</div>
+													<div class="success-alert-title">Успех!</div>
+													<div class="success-alert-message">Ваш проект успешно добавлен</div>
+										
+										</div>
 			<form action="" class="add-project-form" id="jsValidate" method="post">
 				<div class="input-wrap">
 					<label class="add-label" for="add-title">Название проекта
@@ -189,6 +198,7 @@
 <script src="libs/jquery/jquery.min.js"></script>
 <script src="libs/bPopup/jquery.bpopup.min.js"></script>
 <script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="libs/jquery-placeholder/jquery.placeholder.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

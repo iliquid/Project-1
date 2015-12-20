@@ -34,7 +34,7 @@ textarea.tooltip, input.tooltip {
 .title-wrap {
 	margin: 40px auto;
 	width:365px;
-	/*display: none;*/
+	display: none;
 }
 .add-project-title {
 	color: #f8f7f6;
@@ -190,7 +190,7 @@ div.tooltip:after {
     border-left: 6px solid #E48E70;
   }
 
-.error-alert {
+#error-alert {
   padding: 10px;
   border-width: 1px;
   border-color: rgb(73, 187, 123);
@@ -200,6 +200,7 @@ div.tooltip:after {
   font-family:open_sansregular;
   margin-top:10px;
   margin-bottom:10px;
+  display: none;
 }
 .error-alert-title {
    font-size: 16px;
@@ -211,4 +212,31 @@ div.tooltip:after {
   color: rgb(203, 105, 69);
   
 }
+.add-project-wrapper .popup-message {
+  padding: 10px;
+  background: #ccc;
+}
+#success-alert {
+  padding: 10px;
+  border-width: 1px;
+  border-color: rgb(73, 187, 123);
+  border-style: solid;
+  border-radius: 4px;
+  background: #BCE1CB;
+  font-family:open_sansregular;
+  margin-top:10px;
+  margin-bottom:10px;
+ /* display: none;*/
+}
 
+
+.success-alert-title {
+   font-size: 16px;
+  color: #49bb7b;
+}
+
+.success-alert-message{
+  font-size: 14px;
+  color: #49bb7b;
+  
+}

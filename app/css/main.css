@@ -244,8 +244,8 @@ body {
 	margin-left:310px;
 }
 .right-col-header {
-	line-height: 55px;
-  border:1px solid #9C9C9C;
+	padding: 10px 0;
+	border:1px solid #9C9C9C;
   background-image: -moz-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   background-image: -webkit-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
@@ -253,6 +253,7 @@ body {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 	text-shadow: 0px 1px 0px rgba(102, 101, 101, 0.004);
+
 }
 .rc-header-text {
 	padding:0 0 0 44px;
@@ -505,6 +506,12 @@ body {
 }
 .no-cssgradients .add-project:after{
  	 	position: relative;
+}
+.no-cssgradients .add-project-wrapper {
+	background: #fff;
+}
+.no-cssgradients .tooltip, .tooltip-feedback {
+	background: #fff;
 }
 .no-opacity .portfolio-title-overlay {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
