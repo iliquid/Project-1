@@ -226,7 +226,7 @@ div.tooltip:after {
   font-family:open_sansregular;
   margin-top:10px;
   margin-bottom:10px;
- /* display: none;*/
+  display: none;
 }
 
 
